@@ -10,12 +10,6 @@ body {
 
 /* General & 'Reset' Stuff */
 
-.containerh {
-  position:fixed;
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-}
 .container {
   width: 90%;
   max-width: 600px;
@@ -42,6 +36,7 @@ li {
 */
 
 header {
+  position:fixed;
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
   border-bottom: 1px dashed #b5e853;
