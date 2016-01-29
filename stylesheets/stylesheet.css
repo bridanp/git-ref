@@ -10,7 +10,14 @@ body {
 
 /* General & 'Reset' Stuff */
 
+.containerh {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .container {
+  position:absolute;
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
