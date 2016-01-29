@@ -37,7 +37,7 @@ li {
 
 header {
   position:fixed;
-  background: rgba(0, 0, 0, 0.1);
+  background: #151515 url("../images/bkg.png") 0 0;
   width: 100%;
   border-bottom: 1px dashed #b5e853;
   padding: 20px 0;
