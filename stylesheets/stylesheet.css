@@ -44,6 +44,9 @@ header {
 }
 
 header h1 {
+  position: static;
+  left:10px;
+  top:100px;
   font-size: 30px;
   line-height: 1.5;
   margin: 0 0 0 -40px;
@@ -63,9 +66,6 @@ header h1:before {
 }
 
 header h2 {
-  position: static;
-  left:10px;
-  top:100px;
   font-size: 18px;
   font-weight: 300;
   color: #666;
