@@ -1,0 +1,24 @@
+<h4>Stash Commands - temporary storage for modifications</4>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash [save] [<msg>]
+<p>Store all local modifications to a stash.  Save and the msg parameters are optional.</p>
+
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash apply [<stash>]</h3>
+<p>Brings in changes from the specified stash to the work area.  Ommit the <stash> and it pulls the default stash.</p>
+
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash pop</h3>
+<p>Apply the changes from the last pop and delete that stash.  Can specify a stash at the end.</p>
+
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash list</h3>
+<p>List all of the stashes currently available.</p>
+
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash show [<stash>]</h3>
+<p>Outputs the difference in the stash and the parent.  <stash> can be left off and the system will show the latest stash.</p>
+
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash drop [<stash>]</h3>
+<p>Remove one stash from the list.  If the <stash> is left off, the command drops the latest version.</p>
+
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash clear</h3>
+<p>Removes all stashes.</p>
+
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash branch <branchname> [<stash>]</h3>
+<p>Create and checkout the branch named <branchname> using the <stash> listed.  If <stash> is left off of the command, the latest is used.</p>

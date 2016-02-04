@@ -1,0 +1,80 @@
+<h4>Workspace - checkouts on local workstations</h4>
+
+git status
+Shows the files or paths that have differences between the current commit and the index file, between the workspace as a whole and the index, or any path in the workspace that isn't be tracked by git.</p>
+
+
+git diff [<commit>/<branch>]
+Shows the differences not currently in the index.  Add a specific commit or branch if the comparison should be specific.</p>
+
+git diff --cached [<commit>]
+Displays changes staged against what has been committed.  Specific <commit> is optional; will use the latest commit if left off.</p>
+
+
+git add [<file>/<directory>]
+Adds the specified files or directories to the index for staging into the next commit.  Can used specific filenames or wildcard with an *.  * or . can be used to add all changed files and directories.</p>
+
+
+git add -u
+Only adds files modified to the staging area.  New files are left out.</p>
+
+
+git rm <file>
+Removes the specific file from both the index and the workspace.</p>
+
+
+git mv <file>
+Moves the specified file in both the index and workspace.
+
+git clean
+Removes all files in the current directory tree that are not being tracked.
+
+
+git commit -a
+Commits all files changed since the last commit, and deletes files removed from the workspace.
+
+
+git checkout [<file/directory>]
+Updates the file or directory.
+
+git checkout -- <somefilename>
+If unstaging isn't enough, but you want all changes on a file reverted to the last commit, use "checkout".
+
+git reset <somefilename>
+If you decide to not commit a change, use this command to unstage a change.
+
+git reset --hard
+All files changed since last commit are lost and workspace reverts to the local tree. Recommndations are to only use if a merge has caused an insurmountable conflict.
+
+git reset --hard origin/master
+All files changed since last commit on the local repository are lost, and now match the remote/branch.  Origin/master are used here because those are typical names.
+
+git reset HEAD <file>
+Removes file typed in from being included in the next commit.  The changes are still available, but not included in the next commit.
+
+git reset --soft HEAD^
+Removes the last commit, but the changes are kept.
+
+git checkout <newbranch>
+Switch to the new branch.
+
+git checkout -b <newbranch>
+Create new branch and switch to it at the same time.
+
+git merge <branch>
+Merge your changes from a dev branch into the master or current branch.
+
+git rebase upstream
+Reverts all commits from the time the branch diverged.
+
+git cherry-pick <commit>
+Installs changes for the selected <commit> into the current branch.
+
+git revert <commit>
+Reversese any change made at the selected <commit> and then commits the result.
+
+git clone <repo>
+Downloads the specified repo to the local workarea and creates a checkout of the master.  <repo> is typically a remote like https://github.com/<username>/<yourrepo>.git, but it can also be a local repository.
+
+git pull origin master
+Pulls code from your "origin" remote, master and pulls changes into the local.  Useful if code in your local repository is not as current as, say, the GitHub code.
