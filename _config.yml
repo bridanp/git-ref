@@ -1,0 +1,21 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Git Quick Reference
+tagline:             'A fairly simple Git reference listing'
+url:                 http://bridanp.github.io/git-ref
+baseurl:             'http://bridanp.github.io/git-ref'
+paginate:            5
+
+# About/contact
+author:
+  name:              Brian Plunkett
+  url:               https://github.com/bridanp
+  email:             brian.plunkett@gmail.com
+
+# Custom vars
+version:             1.0.0
