@@ -3,7 +3,8 @@ layout: post
 title: Workspace Commands
 ---
 
-<h4>Workspace - checkouts on local workstations</h4>
+<h3>Checkouts on Local Workstations</h3>
+
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git status</h3>
 <p>Shows the files or paths that have differences between the current commit and the index file, between the workspace as a whole and the index, or any path in the workspace that isn't be tracked by git.</p>
 
