@@ -9,9 +9,11 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Repository</a>
-    <a class="sidebar-nav-item" href="http://bridanp.github.io/git-ref/2016/02/17/stash/">Stash</a>
-    <a class="sidebar-nav-item" href="http://bridanp.github.io/git-ref/2016/02/17/commands/">Workspace</a>
+
+  <a class="sidebar-nav-item" href="http://bridanp.github.io/git-ref/2016/02/17/commands/">Repository</a>
+  <a class="sidebar-nav-item" href="http://bridanp.github.io/git-ref/2016/02/17/stash/">Stash</a>
+  <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Workspace</a>
+
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
