@@ -30,11 +30,11 @@
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git commit --amend</h3>
 <p>Quick modification of the last commit with latest changes.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git diff <commit> <commit></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git diff [commit] [commit]</h3>
 <p>Specify two different commits and view the differences.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch [-(r), (a)]</h3>
-<p>Without the options, command displays all branches for the local repository including the master.  <-r> shows remote branches.  <-a> displays local and remote.</p>
+<p>Without the options, command displays all branches for the local repository including the master.  -r shows remote branches.  -a displays local and remote.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git init </h3>
 <p>Initialize your current folder into
@@ -49,22 +49,22 @@ git version control. </p>
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git add *</h3>
 <p>Add every file in the repository to the staging area.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git log [--<decorate>, <stat>, <author=(author)>, <after="MM DD YYYY">, <before="MM DD YYYY">, <follow>, <merge>]</h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git log [--decorate, stat, author=(author), after="MM DD YYYY", before="MM DD YYYY", follow, merge]</h3>
 <p>Lists the revision history for the current branch.  Options do not have to be used, but are effective in "prettifying" the data or drilling down to specifics on a large project.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch -d <somebranch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch -d [somebranch]</h3>
 <p>Once completing a merge, if you don't need the branch any longer, make sure do delete it with the -d qualifier.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch -D <somebranch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch -D [somebranch]</h3>
 <p>If you haven't fully merged a branch, but want to delete it anyway, the -D qualifier will work, but be careful using it.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch --track <new> <remote branch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch --track [new] [remote branch]</h3>
 <p>Create a new local branch that tracks on remote branch.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch -r</h3>
 <p>List all remote branches associated with this repository.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git fetch  <remote> <refspec></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git fetch [remote] [refspec]</h3>
 <p>Downloads objects and files from remote to a local repository, but does not merge the changes.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git push</h3>
@@ -73,13 +73,13 @@ git version control. </p>
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git push -u origin master</h3>
 <p>Push your changes to GitHub or whatever remote repository you have setup.   The -u tells Git to remember the parameters so you can just enter "git push" the next time you "push".</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git push -u origin master <newbranch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git push -u origin master [newbranch]</h3>
 <p>Push to a remote except a new branch (not master)</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git push <remote> :<branch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git push [remote] :[branch]</h3>
 <p>Remote the remote branch associated with the remote repository.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git remote add origin https://github.com/<your user>/<your repository>.git</h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git remote add origin https://github.com/[your user]/[your repository].git</h3>
 <p>If you want to store your code or data on GitHub, add a remote to your GitHub repository.  The name of the repository is "origin" here, but you can name it what you will.</p>
 
 
@@ -89,13 +89,13 @@ git version control. </p>
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git diff --staged</h3>
 <p>Conversely using "--staged" after a "git add" can show you what changes have been staged against changes already committed.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch <newbranch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git branch [newbranch]</h3>
 <p>Create new branch.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git rm '*.txt'</h3>
 <p>Remove all files with the extenstion .txt from the current repository master or branch.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git rm -r <yourfolder></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git rm -r [yourfolder]</h3>
 <p>Remove an entire folder and it's contents.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git commit -m "remove"</h3>
@@ -110,10 +110,10 @@ git version control. </p>
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git show</h3>
 <p>Shows the data involved in the last commit via terminal.  Shift+zz drops back to the command line.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git config --global user.name <username></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git config --global user.name [username]</h3>
 <p>Attaches your specified name to a commit.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git config --global user.email <email address></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git config --global user.email [email address]</h3>
 <p>Attaches your specified email address to a commit.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git config --global color.ui auto</h3>
@@ -125,10 +125,10 @@ git version control. </p>
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git gui</h3>
 <p>GUI interface built into git.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git blame <filename></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git blame [filename]</h3>
 <p>Determine who modified each line of the stated file.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git gui blame <filename></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git gui blame [filename]</h3>
 <p>If you need to verify many lines, the GUI might be better.</p>
 
 <h4>Workspace - checkouts on local workstations</h4>
@@ -136,22 +136,22 @@ git version control. </p>
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git status</h3>
 <p>Shows the files or paths that have differences between the current commit and the index file, between the workspace as a whole and the index, or any path in the workspace that isn't be tracked by git.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git diff [<commit>/<branch>]</h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git diff [commit/branch]</h3>
 <p>Shows the differences not currently in the index.  Add a specific commit or branch if the comparison should be specific.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git diff --cached [<commit>]</h3>
-<p>Displays changes staged against what has been committed.  Specific <commit> is optional; will use the latest commit if left off.</p>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git diff --cached [commit]</h3>
+<p>Displays changes staged against what has been committed.  Specific [commit] is optional; will use the latest commit if left off.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git add [<file>/<directory>]</h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git add [file/directory]</h3>
 <p>Adds the specified files or directories to the index for staging into the next commit.  Can used specific filenames or wildcard with an *.  * or . can be used to add all changed files and directories.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git add -u</h3>
 <p>Only adds files modified to the staging area.  New files are left out.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git rm <file></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git rm file</h3>
 <p>Removes the specific file from both the index and the workspace.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git mv <file></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git mv file</h3>
 <p>Moves the specified file in both the index and workspace.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git clean</h3>
@@ -161,13 +161,13 @@ git version control. </p>
 <p>Commits all files changed since the last commit, and deletes files removed from the workspace.</p>
 
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git checkout [<file/directory>]</h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git checkout [file/directory]</h3>
 <p>Updates the file or directory.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git checkout -- <somefilename></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git checkout -- [somefilename]</h3>
 <p>If unstaging isn't enough, but you want all changes on a file reverted to the last commit, use "checkout".</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git reset <somefilename></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git reset [somefilename]</h3>
 <p>If you decide to not commit a change, use this command to unstage a change.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git reset --hard</h3>
@@ -176,41 +176,41 @@ git version control. </p>
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git reset --hard origin/master</h3>
 <p>All files changed since last commit on the local repository are lost, and now match the remote/branch.  Origin/master are used here because those are typical names.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git reset HEAD <file></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git reset HEAD [file]</h3>
 <p>Removes file typed in from being included in the next commit.  The changes are still available, but not included in the next commit.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git reset --soft HEAD^</h3>
 <p>Removes the last commit, but the changes are kept.
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git checkout <newbranch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git checkout [newbranch]</h3>
 <p>Switch to the new branch.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git checkout -b <newbranch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git checkout -b [newbranch]</h3>
 <p>Create new branch and switch to it at the same time.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git merge <branch></h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git merge [branch]</h3>
 <p>Merge your changes from a dev branch into the master or current branch.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git rebase upstream</h3>
 <p>Reverts all commits from the time the branch diverged.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git cherry-pick <commit></h3>
-<p>Installs changes for the selected <commit> into the current branch.</p>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git cherry-pick [commit]</h3>
+<p>Installs changes for the selected [commit] into the current branch.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git revert <commit></h3>
-<p>Reversese any change made at the selected <commit> and then commits the result.</p>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git revert [commit]</h3>
+<p>Reversese any change made at the selected [commit] and then commits the result.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git clone <repo></h3>
-<p>Downloads the specified repo to the local workarea and creates a checkout of the master.  <repo> is typically a remote like https://github.com/<username>/<yourrepo>.git, but it can also be a local repository.</p>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git clone [repo]</h3>
+<p>Downloads the specified repo to the local workarea and creates a checkout of the master.  <repo> is typically a remote like https://github.com/[username]/[yourrepo].git, but it can also be a local repository.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git pull origin master</h3>
 <p>Pulls code from your "origin" remote, master and pulls changes into the local.  Useful if code in your local repository is not as current as, say, the GitHub code.</p>
 
 <h4>Stash Commands - temporary storage for modifications</h4>
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash [save] [<msg>]</h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash [save] [msg]</h3>
 <p>Store all local modifications to a stash.  Save and the msg parameters are optional.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash apply [<stash>]</h3>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash apply [stash]</h3>
 <p>Brings in changes from the specified stash to the work area.  Ommit the <stash> and it pulls the default stash.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash pop</h3>
@@ -219,17 +219,17 @@ git version control. </p>
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash list</h3>
 <p>List all of the stashes currently available.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash show [<stash>]</h3>
-<p>Outputs the difference in the stash and the parent.  <stash> can be left off and the system will show the latest stash.</p>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash show [stash]</h3>
+<p>Outputs the difference in the stash and the parent.  [stash] can be left off and the system will show the latest stash.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash drop [<stash>]</h3>
-<p>Remove one stash from the list.  If the <stash> is left off, the command drops the latest version.</p>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash drop [stash]</h3>
+<p>Remove one stash from the list.  If the [stash] is left off, the command drops the latest version.</p>
 
 <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash clear</h3>
 <p>Removes all stashes.</p>
 
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash branch <branchname> [<stash>]</h3>
-<p>Create and checkout the branch named <branchname> using the <stash> listed.  If <stash> is left off of the command, the latest is used.</p>
+<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git stash branch [branchname] [stash]</h3>
+<p>Create and checkout the branch named [branchname] using the [stash] listed.  If [stash] is left off of the command, the latest is used.</p>
 
 
       </section>
