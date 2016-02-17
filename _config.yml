@@ -6,8 +6,8 @@ permalink:           pretty
 # Setup
 title:               Git Quick Reference
 tagline:             'A fairly simple Git reference listing'
-url:                 http://bridanp.github.io/git-ref
-baseurl:             'http://bridanp.github.io/git-ref'
+url:                 https://bridanp.github.io/git-ref
+baseurl:             'https://bridanp.github.io/git-ref'
 paginate:            5
 
 # About/contact
