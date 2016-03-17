@@ -6,14 +6,14 @@ permalink:           pretty
 # Setup
 title:               Git Quick Reference
 tagline:             'A fairly simple Git reference listing'
-url:                 https://comicsguy.github.io/git-ref
-baseurl:             'https://comicsguy.github.io/git-ref'
+url:                 https://bridnap.github.io/git-ref
+baseurl:             'https://bridnap.github.io/git-ref'
 paginate:            5
 
 # About/contact
 author:
   name:              Brian Plunkett
-  url:               https://github.com/comicsguy
+  url:               https://github.com/bridnap
   email:             brian.plunkett@gmail.com
 
 # Custom vars
